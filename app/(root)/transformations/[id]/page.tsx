@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function TransfromationsPage() {
+const TransfromationsPage = () => {
   return (
     <div>TransfromationsPage</div>
   )
 }
+
+export default TransfromationsPage

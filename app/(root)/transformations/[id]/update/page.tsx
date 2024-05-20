@@ -1,7 +1,8 @@
 import React from 'react'
 
-export const UpdateTransformations = () => {
+ const UpdateTransformations = () => {
   return (
     <div>UpdateTransformations</div>
   )
 }
+export default UpdateTransformations
