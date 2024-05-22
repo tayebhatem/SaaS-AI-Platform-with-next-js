@@ -7,9 +7,10 @@ import Header from "@/components/Shared/Header";
 import { getUserImages } from "@/lib/actions/image.actions";
 import { getUserById } from "@/lib/actions/user.actions";
 import { auth } from "@clerk/nextjs/server";
-import { useEffect } from "react";
+
 
 const Profile = async ({ searchParams }: SearchParamProps) => {
+ 
   const page = Number(searchParams?.page) || 1;
   const { userId } = auth();
 

@@ -1,5 +1,12 @@
 import { Schema, model, models } from "mongoose";
-
+export interface ITransaction extends Document {
+    createdAt: Date;
+    chargilyId: string;
+    amount: number;
+    plan?: string;
+    credits?: number;
+    buyer?: Schema.Types.ObjectId;
+  }
 const TransactionSchema = new Schema({
   createdAt: {
     type: Date,

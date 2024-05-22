@@ -34,6 +34,7 @@ await fetch('https://pay.chargily.net/test/api/v2/checkouts', options)
 
 export async function createTransaction(transaction: CreateTransactionParams) {
   try {
+  
     await connectToDatabase();
 
     // Create a new transaction with a buyerId
